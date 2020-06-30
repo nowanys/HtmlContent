@@ -1,0 +1,11 @@
+D:\window\repo\WindowsFormsApp1\obj\Debug\Interop.SHDocVw.dll
+D:\window\repo\WindowsFormsApp1\obj\Debug\getInterUrl.csproj.ResolveComReference.cache
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\window\repo\WindowsFormsApp1\obj\Debug\getInterUrl.csproj.GenerateResource.cache
+D:\window\repo\WindowsFormsApp1\obj\Debug\getInterUrl.csproj.CoreCompileInputs.cache
+D:\window\repo\WindowsFormsApp1\bin\Debug\获取ie浏览器内容.exe
+D:\window\repo\WindowsFormsApp1\bin\Debug\获取ie浏览器内容.pdb
+D:\window\repo\WindowsFormsApp1\obj\Debug\获取ie浏览器内容.exe
+D:\window\repo\WindowsFormsApp1\obj\Debug\获取ie浏览器内容.pdb
+D:\window\repo\WindowsFormsApp1\obj\Debug\getInterUrl.csprojAssemblyReference.cache
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources

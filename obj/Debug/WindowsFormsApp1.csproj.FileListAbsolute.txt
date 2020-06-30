@@ -1,0 +1,12 @@
+D:\window\repo\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\window\repo\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\window\repo\WindowsFormsApp1\bin\Debug\Interop.SHDocVw.dll
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\window\repo\WindowsFormsApp1\obj\Debug\Interop.SHDocVw.dll
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+D:\window\repo\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
