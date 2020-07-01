@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mshtml;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,14 +43,63 @@ namespace WindowsFormsApp1
                     urls = urls + url + "\n";
                     if (num == int.Parse(textBox2)) {
                         mshtml.IHTMLDocument2 htmlDoc = (mshtml.IHTMLDocument2)ie.Document;
-                        string aa = htmlDoc != null ? htmlDoc.body.outerHTML.ToString() : "***Failed***";
-                        htmlContent = aa;
+
+
+
+                        IHTMLFramesCollection2 frames = htmlDoc.frames;
+                        int len = frames.length;
+                        int i = 0;
+                        IHTMLWindow2 mainFrame = null;
+                        IHTMLWindow2 windowFrame = null;
+
+                        for (;i< len;i++) {
+                            IHTMLWindow2 frame2 = frames.item(i) as IHTMLWindow2;
+                            //if ("mainFrame".Equals(frame2.name)) {
+                            //    htmlContent= frame2.document.body.innerHTML.ToString();
+                            //}
+
+                            if (frame2.name!=null && frame2.name.Contains("window"))
+                            {
+                                htmlContent = frame2.document.body.innerHTML.ToString();
+                                windowFrame = frame2;
+                                //HTMLIFrame fe = (HTMLIFrame)frames.item(i).document;
+                                //fe.contentWindow.execScript("doShut()", "javascript");
+                                //触发点击事件
+                                //mshtml.IHTMLWindow2 win = (mshtml.IHTMLWindow2)htmlDoc.parentWindow;
+                                //frame2.execScript(";", "javascript");//使用JS
+                            }
+
+                            if (frame2.name != null && frame2.name.Contains("mainFrame"))
+                            {
+                                htmlContent = frame2.document.body.innerHTML.ToString();
+                                mainFrame = frame2;
+                            }
+                        }
+                        mainFrame.execScript("showRHBillDetailForAuth('3785441458','1','15000096057223')");
+                        //windowFrame.execScript("doShut()");
+                        //string aa = htmlDoc != null ? htmlDoc.body.outerHTML.ToString() : "***Failed***";
+                        //htmlContent = aa;
+
+                        //string aa = htmlDoc.body.innerHTML.ToString();
+                        //htmlContent = aa;
+
+                        //触发点击事件
+                        //mshtml.IHTMLWindow2 win = (mshtml.IHTMLWindow2)htmlDoc.parentWindow;
+                        //win.execScript("doSubmit()", "javascript");//使用JS
                     }
                 }
             }
             this.groupBox2.Text = urls;
             this.richTextBox1.Text = htmlContent;
             this.textBox1.Text = num.ToString();
+
+            //Form2 form2 = new Form2();
+            //form2.Show();
+            ////this.Close();
+            //this.Hide();
+
+
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
